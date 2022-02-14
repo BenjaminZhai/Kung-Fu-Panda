@@ -13,8 +13,8 @@ document.getElementById("search").addEventListener("click", characterSearch)
 function characterSearch(){
 
     // Get Input
-    let name = document.getElementById("name").value;
-    name = name.toLowerCase();
+    let name = document.getElementById("name").value.toLowerCase();
+    
 
 
     // Check name
@@ -26,7 +26,7 @@ function characterSearch(){
         charImgEl.src = "images/viper.png";
         charNameEl.innerHTML = "Viper"
         charQuoteEl.innerHTML = "I don't need to bite to fight!"
-    }else if (name === "po"){
+    }else if (name === "po" || name === "dragon warrior" || name === "the dragon warrior"){
         charImgEl.src = "images/po.png";
         charNameEl.innerHTML = "Po"
         charQuoteEl.innerHTML = "Buddy, I am the Dragon Warrior!"
